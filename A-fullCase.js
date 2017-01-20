@@ -1,9 +1,9 @@
 ( function() {
 var app = angular.module('searchResult', [ ] );
 app.controller('SearchController', function() {
-      this.results = persons;
+      this.result = person;
 });
-var persons =
+var person =
 {
 status : "Missing",
 firstName : "Tyronne",
@@ -83,7 +83,5 @@ detCity : "Dallas",
 detState : "Texas",
 detZipCode : "75416",
 comments :
-}
-
-
+};
 }) ();

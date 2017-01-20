@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html ng-app= "searchResult">
+<html>
 <meta charset= "utf-8"/>
 <head>
 <link rel= "stylesheet" type= "text/css" href= "A-fullCase.css">
 </head>
 
-<body>
+<body ng-app= "searchResult" ng-controller= "SearchController as search">
 
 <div class= "card">
   <h1> Identification </h1>
-  <p> Status: </p>
+  <p> Status: {{ search.result.status }} </p>
   <p> First Name: </p>
   <p> Middle Name: </p>
   <p> Last Name:  </p>
