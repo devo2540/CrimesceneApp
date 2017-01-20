@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app= "searchResult">
+<meta charset= "utf-8"/>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "A-fullCase.css">
+</head>
+
+<body ng-controller= "SearchController as search">
+<div class= "card"  ng-repeat= "result in search.results">
+      <h1> {{ result.heading1 }} </h1>
+  <p> {{ result.status }} </p>
+  <span>
+    {{ result.firstName }}
+    {{ result.middleName }}
+    {{ result.lastName }}
+  </span>
+  <p> {{ result.alias }} </p>
+  <p> {{ result.ageLastSeen }} </p>
+  <p> {{ result.ageNow }} </p>
+  <p> {{ result.race }} </p>
+  <p> {{ result.ethnicity }} </p>
+  <p> {{ result.sex }} </p>
+  <span>
+    {{ result.height }}
+    {{ result.heightUnits }}
+  </span>
+  <br><br>
+  <span>
+    {{ result.weight }}
+    {{ result.weightUnits }}
+  </span>
+      <h1> {{ result.heading2}} </h1>
+  <p> {{ result.dateLastSeen }} </p>
+  <p> {{result.dateEntered }} </p>
+  <p> {{ result.city }} </p>
+  <p> {{ result.state }} </p>
+  <p> {{ result.zipCode }} </p>
+  <p> {{ result.county }} </p>
+      <h1> {{ result.heading3 }} </h1>
+  <p> {{ result.vehicleMake }} </p>
+  <p> {{ result.vehicleModel }} </p>
+  <p> {{ result.year }} </p>
+  <p> {{ result.style }} </p>
+  <p> {{ result.vehicleColor }} </p>
+  <p> {{ result.tagType }} </p>
+  <p> {{ result.tagNumber }} </p>
+  <p> {{ result.tagState }} </p>
+  <p> {{ result.expYear }} </p>
+  <p> {{ result. vehicleComments }} </p>
+  <p> {{ result.airline }} </p>
+  <p> {{ result.bus }} </p>
+      <h1> {{ result.heading4 }} </h1>
+  <p> {{ result.clothingAccesories }} </p>
+  <p> {{ result.clothing }} </p>
+  <p> {{result.footwear }} </p>
+  <p> {{ result.jewelry }} </p>
+  <p> {{ result.eyewear }} </p>
+  <p> {{ result.accesories }} </p>
+      <h1> {{ result.heading5 }} </h1>
+  <span>{{ result.title }}
+  {{ result.detFirstName }}
+  {{ result.detLastName }} </span>
+  <p> {{ result.phone }} </p>
+  <p> {{ result.website }} </p>
+  <p> {{ result.caseNumber }} </p>
+  <p> {{ result.dateReported }} </p>
+  <p> {{ result.jurisdiction }} </p>
+  <p> {{ result.agency }} </p>
+  <p> {{ result.addressOne }} </p>
+  <p> {{ result.addressTwo }} </p>
+  <p> {{ result.detCity }} </p>
+  <p> {{ result.detState }} </p>
+  <p> {{ result.detZipCode }} </p>
+  <p> {{ result.comments }} </p>
+      <h1> {{ result.heading6 }} </h1>
+  <p> {{ result.noDistinctiveFeatures }} </p>
+  <p> {{ result.hairColor }} </p>
+  <p> {{ result.headHair }} </p>
+  <p> {{ result.bodyHair }} </p>
+  <p> {{ result.facialHair }} </p>
+  <p> {{result.leftEyeColor }} </p>
+  <p> {{ result.rightEyeColor }} </p>
+  <p> {{ result.eyeDescription }} </p>
+  <p> {{ result.scars }} </p>
+  <p> {{ result.tattoos }} </p>
+  <p> {{ result.piercings }} </p>
+  <p> {{ result.fingerNails }} </p>
+  <p> {{ result.other}} </p>
+      <h1> {{ result.heading7 }} </h1>
+  <p> {{ result.amputations }} </p>
+  <p> {{ result.deformalities }} </p>
+  <p> {{ result.artificialParts }} </p>
+  <p> {{ result.foreignObjects }} </p>
+  <p> {{ result.skeletalInfo }} </p>
+
+</div>
+
+
+  <script type= "text/javascript" src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+  <script type= "text/javascript" src= "A-fullCase.js"></script>
+</body>
+</html>

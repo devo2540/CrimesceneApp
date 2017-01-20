@@ -1,0 +1,17 @@
+.card{
+  max-width: 100%;
+  display: block;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.card h2 {
+  padding-left: 5px;
+}
+
+
+.heading {
+  background-color: red;
+  border: 1px solid red;
+  height: 50px;
+}
