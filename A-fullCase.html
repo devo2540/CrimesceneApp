@@ -7,10 +7,11 @@
 
 <body ng-app= "searchResult" ng-controller= "SearchController as search">
 
+<!-- Identification -->
 <div class= "card">
   <h1> Identification </h1>
-  <p> Status: {{ search.result.status }} </p>
-  <p> First Name: </p>
+  <p> Status: </p>
+  <p> First Name: {{ search.result.firstName }} </p>
   <p> Middle Name: </p>
   <p> Last Name:  </p>
   <p> Alias: </p>
@@ -24,7 +25,7 @@
   <p> Weight: </p>
   <p> Weight Units: </p>
 </div>
-
+<!-- Circumstances -->
 <div class= "card">
   <h1> Circumstances </h1>
   <p> Date Last Seen: </p>
@@ -34,7 +35,7 @@
   <p> Zip Code: </p>
   <p> County: </p>
 </div>
-
+<!-- Vehicle -->
 <div class= "card">
   <h1> Vehicle </h1>
   <p> Vehicle Make: </p>
@@ -50,7 +51,7 @@
   <p> Airline: </p>
   <p> Bus: </p>
 </div>
-
+<!-- Clothing -->
 <div class= "card">
   <h1> Clothing & Accessories </h1>
   <p> Clothing Accesories: </p>
@@ -60,7 +61,7 @@
   <p> Eyewear: </p>
   <p> Accesories: </p>
 </div>
-
+<!-- Investigating Agency -->
 <div class= "card">
   <h1> Investigating Agency </h1>
   <p> Title: </p>
@@ -79,7 +80,7 @@
   <p> Zip Code: </p>
   <p> Comments: </p>
 </div>
-
+<!-- Physical -->
 <div class= "card">
   <h1> Physical </h1>
   <p> No Distinctive Features: </p>
@@ -95,7 +96,7 @@
   <p> Fingernails: </p>
   <p> Other: </p>
 </div>
-
+<!-- Medical -->
 <div class= "card">
   <h1> Medical </h1>
   <p> Amputations: </p>
