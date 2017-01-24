@@ -1,0 +1,19 @@
+function results() {
+  document.getElementById("results").innerHTML =
+    + var results = "<div class='prof'>"
+    + results = "<img src='http://www.psdgraphics.com/file/female-silhouette.jpg'  alt='headshot'>"
+    + results = "<p> Name: </p>"
+    + results = "<p> &nbsp; </p>"
+    + results = "<span> <p> M </p> <p> 210 </p> <p> 6' 1'' </p> <p> 45 </p> </span>"
+    + results =  "</div>";
+
+return results;
+}
+
+function case_file_result() {
+  var result = 0;
+  while(result<8) {
+    result ++;
+    document.getElementById("result").appendChild(results());
+  }
+}

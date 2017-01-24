@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset= "utf-8"/>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "angular-crimesceneHome-style.css">
+</head>
+
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+
+
+<body>
+  <div class= "center">
+<form ng-app= "searchApp" action= "A-searchResults.html" method= "post">
+
+    <div class= "box5" name= "race" ng-controller= "searchCtrl">
+      <label class="label">  Race: </label>
+        <select name= "race" ng-model= "selectedRaces" ng-options= "x for x in race">
+          <option value= ""> -- Select Race -- </option>
+        </select>
+    </div>
+
+    <div class= "box5" name="height" ng-controller= "searchCtrl" >
+        <label class="label"> Height: </label>
+        <select name= "height1" class= "height" ng-model= "selectedHeights1" ng-options= "x for x in height1">
+            <option value= ""> -- Height -- </option>
+        </select>
+      <label> To: </label>
+        <select name= "height2" class= "height" ng-model= "selectedHeights2" ng-options= "x for x in height2">
+          <option value= ""> -- Height -- </option>
+        </select>
+    </div>
+
+    <div class="box5" name="weight" ng-controller= "searchCtrl">
+      <label class= "label"> Weight (lbs): </label>
+        <input name= "weight" class="weight" type= "number" ng-model= "weight" min= "0" max= "500">
+    </div>
+
+    <div class="box5" name= "gender" ng-controller= "searchCtrl">
+      <label class= "label"> Gender: </label>
+      <select name= "gender" ng-model= "selectedGenders" ng-options= "x for x in gender">
+        <option value= ""> -- Select Gender -- </option>
+      </select>
+
+    </div>
+
+    <div class="box5" name="hair" ng-controller= "searchCtrl">
+      <label class= "label"> Hair Color: </label>
+      <select name= "hair" ng-model= "selectedHair" ng-options= "x for x in hair">
+        <option value=""> -- Select Hair Color -- </option>
+      </select>
+    </div>
+
+    <div class= "box5" name= "distance" ng-controller= "searchCtrl">
+        <label class= "label"> Distance (mi): </label>
+        <input name= "distance" type="range" name="milesInputName" id="milesInputId" value="50" min="1" max="200" oninput="milesOutputId.value = milesInputId.value">
+        <output name="milesOutputName" id="milesOutputId">100</output>
+    </div>
+
+    <div class= "label">
+        <input value= "Search" type= "submit">
+    </div>
+</form>
+</div>
+
+
+  <script>
+    var app= angular.module("searchApp", []);
+    app.controller("searchCtrl", function($scope) {
+      $scope.race= [
+        "White",
+        "African American",
+        "American Indian",
+        "Hispanic",
+        "Asian",
+        "Pacific Islander"
+      ];
+      $scope.height1= [
+        " < 5' ",
+        " 5' 1'' ",
+        " 5' 2'' ",
+        " 5' 3'' ",
+        " 5' 4'' ",
+        " 5' 5'' ",
+        " 5' 6'' ",
+        " 5' 7'' ",
+        " 5' 8'' ",
+        " 5' 9'' ",
+        " 5' 10'' ",
+        " 5' 11'' ",
+        " 6' 0'' ",
+        " 6' 1'' ",
+        " 6' 2'' ",
+        " 6' 3'' ",
+        "6' 4'' ",
+        " > 6' 4'' "
+      ];
+      $scope.height2= [
+        " < 5' ",
+        " 5' 1'' ",
+        " 5' 2'' ",
+        " 5' 3'' ",
+        " 5' 4'' ",
+        " 5' 5'' ",
+        " 5' 6'' ",
+        " 5' 7'' ",
+        " 5' 8'' ",
+        " 5' 9'' ",
+        " 5' 10'' ",
+        " 5' 11'' ",
+        " 6' 0'' ",
+        " 6' 1'' ",
+        " 6' 2'' ",
+        " 6' 3'' ",
+        "6' 4'' ",
+        " > 6' 4'' "
+      ];
+      $scope.gender= [
+        "Male",
+        "Female"
+      ];
+      $scope.hair= [
+        "Brown",
+        "Blonde",
+        "Red",
+        "Black"
+      ];
+});
+  </script>
+
+</body>
+
+</html>

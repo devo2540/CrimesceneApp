@@ -1,0 +1,15 @@
+{
+  "name": "casefile",
+  "version": "1.0.0",
+  "description": "case information",
+  "main": "angular-crimescene-home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Devin Carter",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

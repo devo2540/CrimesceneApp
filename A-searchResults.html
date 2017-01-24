@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app= "searchResult">
+<meta charset= "utf-8"/>
+<head>
+<link rel="stylesheet" type= "text/css" href= "A-searchResults.css">
+</head>
+
+
+<body ng-controller= "SearchController as search">
+
+<div class= "prof" ng-repeat= "result in search.results">
+  <a href= "A-fullCase.html?c={{ result.caseNum }}">
+<img ng-src= "{{ result.img }}">
+</a>
+<p> {{ result.firstName + " " + result.lastName}} </p>
+<p> &nbsp </p>
+<span>
+  <p> {{ result.sex }} </p>
+  <p> {{ result.weight }} </p>
+  <p> {{ result.height }} </p>
+  <p> {{ result.age }} </p>
+</span>
+
+</div>
+
+<script type= "text/javascript" src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+<script type= "text/javascript" src= "A-searchResults.js"></script>
+</body>
+</html>
