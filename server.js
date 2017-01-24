@@ -16,17 +16,12 @@ app.get('/casefile', function (req, res) {
     console.log(  JSON.stringify(req.query));
    var content = fs.readFileSync (__dirname + "/" + "caselist.JSON");
    var caselist = JSON.parse( content );
-   var matching = [ ];
-   for( i = 0; i < caselist.length; i++) {
-      console.log( caselist[ i ].sex );
-      if( (req.query.gender == "male" && caselist[ i ].sex == "M") ||
-          (req.query.gender == "female" && caselist[ i ].sex == "F") ||
-          (req.query.gender == undefined )) {
-      matching.push(caselist[ i ]);
-    };
-   };
-
-   res.end( JSON.stringify(matching, null, 2) );
+   var matching = caselist.filter(function(c) {
+        return ((req.query.gender == "male" && c.sex == "M") ||
+            (req.query.gender == "female" && c.sex == "F") ||
+            (req.query.gender == undefined ));
+   });
+ res.end( JSON.stringify(matching, null, 2) );
 
  })
 
